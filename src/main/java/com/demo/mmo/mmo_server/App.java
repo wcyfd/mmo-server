@@ -18,32 +18,27 @@ public class App {
 	public static void main(String[] args) {
 		System.out.println("Hello World!");
 		ByteString data = Data101.newBuilder().setAge(20).setName("wcy").setSex(1).build().toByteString();
-		Request request = Request.newBuilder().setProtocal(101).setData(data).build();
+		Request request = Request.newBuilder().setProtocal(1).setData(data).build();
 		byte[] bytes = request.toByteArray();
+		System.out.println(bytes.length);
 
 		try {
 			Request result = Request.parseFrom(bytes);
 			int protocal = result.getProtocal();
-			Data101 resultData = (Data101)getByteString(protocal,result.getData());
+			ByteString response = result.getData();
+			Data101 v = Data101.parseFrom(response);
+			int age = v.getAge();
+			String name=  v.getName();
+			int sex = v.getSex();
+			int size = v.getSerializedSize();
+			System.out.println(age + " " + name+" "+sex+" "+size);
+			
 		} catch (InvalidProtocolBufferException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 
-	public static GeneratedMessageV3 getByteString(int protocal, ByteString res) {
-		GeneratedMessageV3 v = null;
-		try {
-			if (protocal == 101) {
-				v = Data101.parseFrom(res);
-			}
-			return v;
-		} catch (InvalidProtocolBufferException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return null;
-
-	}
+	
 
 }

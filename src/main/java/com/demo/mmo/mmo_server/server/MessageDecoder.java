@@ -7,7 +7,7 @@ import org.apache.mina.core.session.IoSession;
 import org.apache.mina.filter.codec.CumulativeProtocolDecoder;
 import org.apache.mina.filter.codec.ProtocolDecoderOutput;
 
-import com.demo.mmo.mmo_server.protocals.Protocal.Request;
+import com.demo.mmo.mmo_server.protocals.base.Protocal.Request;
 
 public class MessageDecoder extends CumulativeProtocolDecoder {
 	protected boolean doDecode(IoSession session, IoBuffer in, ProtocolDecoderOutput out) throws Exception {
@@ -20,7 +20,7 @@ public class MessageDecoder extends CumulativeProtocolDecoder {
 
 			int size = in.getInt();
 			if (size > 2048) {
-				// throw new NumberFakeException("msg size too long");
+//				 throw new NumberFakeException("msg size too long");
 			}
 
 			if (size > in.remaining()) {

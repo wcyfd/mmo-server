@@ -30,6 +30,6 @@ public class ResponseNavigation {
 	}
 
 	public static void init() {
-		classMap.put(ResponseNavigationId.LOGIN, LoginResponse101.class);
+		classMap.put(ResponseProtocal.LOGIN, LoginResponse101.class);
 	}
 }

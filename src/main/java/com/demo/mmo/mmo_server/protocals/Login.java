@@ -14,8 +14,8 @@ public final class Login {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
-  public interface LoginRequest101OrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.demo.mmo.mmo_server.protocals.LoginRequest101)
+  public interface CS_101OrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.demo.mmo.mmo_server.protocals.CS_101)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -39,17 +39,17 @@ public final class Login {
         getAccountBytes();
   }
   /**
-   * Protobuf type {@code com.demo.mmo.mmo_server.protocals.LoginRequest101}
+   * Protobuf type {@code com.demo.mmo.mmo_server.protocals.CS_101}
    */
-  public  static final class LoginRequest101 extends
+  public  static final class CS_101 extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.demo.mmo.mmo_server.protocals.LoginRequest101)
-      LoginRequest101OrBuilder {
-    // Use LoginRequest101.newBuilder() to construct.
-    private LoginRequest101(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:com.demo.mmo.mmo_server.protocals.CS_101)
+      CS_101OrBuilder {
+    // Use CS_101.newBuilder() to construct.
+    private CS_101(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private LoginRequest101() {
+    private CS_101() {
       name_ = "";
       account_ = "";
     }
@@ -59,7 +59,7 @@ public final class Login {
     getUnknownFields() {
       return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
     }
-    private LoginRequest101(
+    private CS_101(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -104,14 +104,14 @@ public final class Login {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_LoginRequest101_descriptor;
+      return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_CS_101_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_LoginRequest101_fieldAccessorTable
+      return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_CS_101_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.demo.mmo.mmo_server.protocals.Login.LoginRequest101.class, com.demo.mmo.mmo_server.protocals.Login.LoginRequest101.Builder.class);
+              com.demo.mmo.mmo_server.protocals.Login.CS_101.class, com.demo.mmo.mmo_server.protocals.Login.CS_101.Builder.class);
     }
 
     public static final int NAME_FIELD_NUMBER = 1;
@@ -223,10 +223,10 @@ public final class Login {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.demo.mmo.mmo_server.protocals.Login.LoginRequest101)) {
+      if (!(obj instanceof com.demo.mmo.mmo_server.protocals.Login.CS_101)) {
         return super.equals(obj);
       }
-      com.demo.mmo.mmo_server.protocals.Login.LoginRequest101 other = (com.demo.mmo.mmo_server.protocals.Login.LoginRequest101) obj;
+      com.demo.mmo.mmo_server.protocals.Login.CS_101 other = (com.demo.mmo.mmo_server.protocals.Login.CS_101) obj;
 
       boolean result = true;
       result = result && getName()
@@ -252,58 +252,58 @@ public final class Login {
       return hash;
     }
 
-    public static com.demo.mmo.mmo_server.protocals.Login.LoginRequest101 parseFrom(
+    public static com.demo.mmo.mmo_server.protocals.Login.CS_101 parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.demo.mmo.mmo_server.protocals.Login.LoginRequest101 parseFrom(
+    public static com.demo.mmo.mmo_server.protocals.Login.CS_101 parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.demo.mmo.mmo_server.protocals.Login.LoginRequest101 parseFrom(byte[] data)
+    public static com.demo.mmo.mmo_server.protocals.Login.CS_101 parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.demo.mmo.mmo_server.protocals.Login.LoginRequest101 parseFrom(
+    public static com.demo.mmo.mmo_server.protocals.Login.CS_101 parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.demo.mmo.mmo_server.protocals.Login.LoginRequest101 parseFrom(java.io.InputStream input)
+    public static com.demo.mmo.mmo_server.protocals.Login.CS_101 parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.demo.mmo.mmo_server.protocals.Login.LoginRequest101 parseFrom(
+    public static com.demo.mmo.mmo_server.protocals.Login.CS_101 parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.demo.mmo.mmo_server.protocals.Login.LoginRequest101 parseDelimitedFrom(java.io.InputStream input)
+    public static com.demo.mmo.mmo_server.protocals.Login.CS_101 parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.demo.mmo.mmo_server.protocals.Login.LoginRequest101 parseDelimitedFrom(
+    public static com.demo.mmo.mmo_server.protocals.Login.CS_101 parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.demo.mmo.mmo_server.protocals.Login.LoginRequest101 parseFrom(
+    public static com.demo.mmo.mmo_server.protocals.Login.CS_101 parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.demo.mmo.mmo_server.protocals.Login.LoginRequest101 parseFrom(
+    public static com.demo.mmo.mmo_server.protocals.Login.CS_101 parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -315,7 +315,7 @@ public final class Login {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.demo.mmo.mmo_server.protocals.Login.LoginRequest101 prototype) {
+    public static Builder newBuilder(com.demo.mmo.mmo_server.protocals.Login.CS_101 prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -330,25 +330,25 @@ public final class Login {
       return builder;
     }
     /**
-     * Protobuf type {@code com.demo.mmo.mmo_server.protocals.LoginRequest101}
+     * Protobuf type {@code com.demo.mmo.mmo_server.protocals.CS_101}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.demo.mmo.mmo_server.protocals.LoginRequest101)
-        com.demo.mmo.mmo_server.protocals.Login.LoginRequest101OrBuilder {
+        // @@protoc_insertion_point(builder_implements:com.demo.mmo.mmo_server.protocals.CS_101)
+        com.demo.mmo.mmo_server.protocals.Login.CS_101OrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_LoginRequest101_descriptor;
+        return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_CS_101_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_LoginRequest101_fieldAccessorTable
+        return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_CS_101_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.demo.mmo.mmo_server.protocals.Login.LoginRequest101.class, com.demo.mmo.mmo_server.protocals.Login.LoginRequest101.Builder.class);
+                com.demo.mmo.mmo_server.protocals.Login.CS_101.class, com.demo.mmo.mmo_server.protocals.Login.CS_101.Builder.class);
       }
 
-      // Construct using com.demo.mmo.mmo_server.protocals.Login.LoginRequest101.newBuilder()
+      // Construct using com.demo.mmo.mmo_server.protocals.Login.CS_101.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -374,23 +374,23 @@ public final class Login {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_LoginRequest101_descriptor;
+        return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_CS_101_descriptor;
       }
 
-      public com.demo.mmo.mmo_server.protocals.Login.LoginRequest101 getDefaultInstanceForType() {
-        return com.demo.mmo.mmo_server.protocals.Login.LoginRequest101.getDefaultInstance();
+      public com.demo.mmo.mmo_server.protocals.Login.CS_101 getDefaultInstanceForType() {
+        return com.demo.mmo.mmo_server.protocals.Login.CS_101.getDefaultInstance();
       }
 
-      public com.demo.mmo.mmo_server.protocals.Login.LoginRequest101 build() {
-        com.demo.mmo.mmo_server.protocals.Login.LoginRequest101 result = buildPartial();
+      public com.demo.mmo.mmo_server.protocals.Login.CS_101 build() {
+        com.demo.mmo.mmo_server.protocals.Login.CS_101 result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.demo.mmo.mmo_server.protocals.Login.LoginRequest101 buildPartial() {
-        com.demo.mmo.mmo_server.protocals.Login.LoginRequest101 result = new com.demo.mmo.mmo_server.protocals.Login.LoginRequest101(this);
+      public com.demo.mmo.mmo_server.protocals.Login.CS_101 buildPartial() {
+        com.demo.mmo.mmo_server.protocals.Login.CS_101 result = new com.demo.mmo.mmo_server.protocals.Login.CS_101(this);
         result.name_ = name_;
         result.account_ = account_;
         onBuilt();
@@ -424,16 +424,16 @@ public final class Login {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.demo.mmo.mmo_server.protocals.Login.LoginRequest101) {
-          return mergeFrom((com.demo.mmo.mmo_server.protocals.Login.LoginRequest101)other);
+        if (other instanceof com.demo.mmo.mmo_server.protocals.Login.CS_101) {
+          return mergeFrom((com.demo.mmo.mmo_server.protocals.Login.CS_101)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.demo.mmo.mmo_server.protocals.Login.LoginRequest101 other) {
-        if (other == com.demo.mmo.mmo_server.protocals.Login.LoginRequest101.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.demo.mmo.mmo_server.protocals.Login.CS_101 other) {
+        if (other == com.demo.mmo.mmo_server.protocals.Login.CS_101.getDefaultInstance()) return this;
         if (!other.getName().isEmpty()) {
           name_ = other.name_;
           onChanged();
@@ -454,11 +454,11 @@ public final class Login {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.demo.mmo.mmo_server.protocals.Login.LoginRequest101 parsedMessage = null;
+        com.demo.mmo.mmo_server.protocals.Login.CS_101 parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.demo.mmo.mmo_server.protocals.Login.LoginRequest101) e.getUnfinishedMessage();
+          parsedMessage = (com.demo.mmo.mmo_server.protocals.Login.CS_101) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -616,46 +616,46 @@ public final class Login {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:com.demo.mmo.mmo_server.protocals.LoginRequest101)
+      // @@protoc_insertion_point(builder_scope:com.demo.mmo.mmo_server.protocals.CS_101)
     }
 
-    // @@protoc_insertion_point(class_scope:com.demo.mmo.mmo_server.protocals.LoginRequest101)
-    private static final com.demo.mmo.mmo_server.protocals.Login.LoginRequest101 DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:com.demo.mmo.mmo_server.protocals.CS_101)
+    private static final com.demo.mmo.mmo_server.protocals.Login.CS_101 DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.demo.mmo.mmo_server.protocals.Login.LoginRequest101();
+      DEFAULT_INSTANCE = new com.demo.mmo.mmo_server.protocals.Login.CS_101();
     }
 
-    public static com.demo.mmo.mmo_server.protocals.Login.LoginRequest101 getDefaultInstance() {
+    public static com.demo.mmo.mmo_server.protocals.Login.CS_101 getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<LoginRequest101>
-        PARSER = new com.google.protobuf.AbstractParser<LoginRequest101>() {
-      public LoginRequest101 parsePartialFrom(
+    private static final com.google.protobuf.Parser<CS_101>
+        PARSER = new com.google.protobuf.AbstractParser<CS_101>() {
+      public CS_101 parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new LoginRequest101(input, extensionRegistry);
+          return new CS_101(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<LoginRequest101> parser() {
+    public static com.google.protobuf.Parser<CS_101> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<LoginRequest101> getParserForType() {
+    public com.google.protobuf.Parser<CS_101> getParserForType() {
       return PARSER;
     }
 
-    public com.demo.mmo.mmo_server.protocals.Login.LoginRequest101 getDefaultInstanceForType() {
+    public com.demo.mmo.mmo_server.protocals.Login.CS_101 getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface LoginResponse101OrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.demo.mmo.mmo_server.protocals.LoginResponse101)
+  public interface SC_101OrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.demo.mmo.mmo_server.protocals.SC_101)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -674,27 +674,27 @@ public final class Login {
     int getSex();
 
     /**
-     * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+     * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
      */
-    java.util.List<com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate> 
+    java.util.List<com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate> 
         getClassmatesList();
     /**
-     * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+     * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
      */
-    com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate getClassmates(int index);
+    com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate getClassmates(int index);
     /**
-     * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+     * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
      */
     int getClassmatesCount();
     /**
-     * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+     * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
      */
-    java.util.List<? extends com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.ClassmateOrBuilder> 
+    java.util.List<? extends com.demo.mmo.mmo_server.protocals.Login.SC_101.ClassmateOrBuilder> 
         getClassmatesOrBuilderList();
     /**
-     * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+     * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
      */
-    com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.ClassmateOrBuilder getClassmatesOrBuilder(
+    com.demo.mmo.mmo_server.protocals.Login.SC_101.ClassmateOrBuilder getClassmatesOrBuilder(
         int index);
 
     /**
@@ -732,17 +732,17 @@ public final class Login {
         java.lang.String key);
   }
   /**
-   * Protobuf type {@code com.demo.mmo.mmo_server.protocals.LoginResponse101}
+   * Protobuf type {@code com.demo.mmo.mmo_server.protocals.SC_101}
    */
-  public  static final class LoginResponse101 extends
+  public  static final class SC_101 extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.demo.mmo.mmo_server.protocals.LoginResponse101)
-      LoginResponse101OrBuilder {
-    // Use LoginResponse101.newBuilder() to construct.
-    private LoginResponse101(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:com.demo.mmo.mmo_server.protocals.SC_101)
+      SC_101OrBuilder {
+    // Use SC_101.newBuilder() to construct.
+    private SC_101(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private LoginResponse101() {
+    private SC_101() {
       success_ = false;
       age_ = 0;
       sex_ = 0;
@@ -754,7 +754,7 @@ public final class Login {
     getUnknownFields() {
       return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
     }
-    private LoginResponse101(
+    private SC_101(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -791,11 +791,11 @@ public final class Login {
             }
             case 34: {
               if (!((mutable_bitField0_ & 0x00000008) == 0x00000008)) {
-                classmates_ = new java.util.ArrayList<com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate>();
+                classmates_ = new java.util.ArrayList<com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate>();
                 mutable_bitField0_ |= 0x00000008;
               }
               classmates_.add(
-                  input.readMessage(com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate.parser(), extensionRegistry));
+                  input.readMessage(com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate.parser(), extensionRegistry));
               break;
             }
             case 42: {
@@ -826,7 +826,7 @@ public final class Login {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_descriptor;
+      return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_SC_101_descriptor;
     }
 
     @SuppressWarnings({"rawtypes"})
@@ -842,13 +842,13 @@ public final class Login {
     }
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_fieldAccessorTable
+      return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_SC_101_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.class, com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Builder.class);
+              com.demo.mmo.mmo_server.protocals.Login.SC_101.class, com.demo.mmo.mmo_server.protocals.Login.SC_101.Builder.class);
     }
 
     public interface ClassmateOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate)
+        // @@protoc_insertion_point(interface_extends:com.demo.mmo.mmo_server.protocals.SC_101.Classmate)
         com.google.protobuf.MessageOrBuilder {
 
       /**
@@ -872,11 +872,11 @@ public final class Login {
       int getAge();
     }
     /**
-     * Protobuf type {@code com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate}
+     * Protobuf type {@code com.demo.mmo.mmo_server.protocals.SC_101.Classmate}
      */
     public  static final class Classmate extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate)
+        // @@protoc_insertion_point(message_implements:com.demo.mmo.mmo_server.protocals.SC_101.Classmate)
         ClassmateOrBuilder {
       // Use Classmate.newBuilder() to construct.
       private Classmate(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -942,14 +942,14 @@ public final class Login {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_Classmate_descriptor;
+        return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_SC_101_Classmate_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_Classmate_fieldAccessorTable
+        return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_SC_101_Classmate_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate.class, com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate.Builder.class);
+                com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate.class, com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate.Builder.class);
       }
 
       public static final int NAME_FIELD_NUMBER = 1;
@@ -1053,10 +1053,10 @@ public final class Login {
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate)) {
+        if (!(obj instanceof com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate)) {
           return super.equals(obj);
         }
-        com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate other = (com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate) obj;
+        com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate other = (com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate) obj;
 
         boolean result = true;
         result = result && getName()
@@ -1086,58 +1086,58 @@ public final class Login {
         return hash;
       }
 
-      public static com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate parseFrom(
+      public static com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate parseFrom(
+      public static com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate parseFrom(byte[] data)
+      public static com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate parseFrom(
+      public static com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate parseFrom(java.io.InputStream input)
+      public static com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate parseFrom(
+      public static com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
-      public static com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate parseDelimitedFrom(java.io.InputStream input)
+      public static com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input);
       }
-      public static com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate parseDelimitedFrom(
+      public static com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate parseFrom(
+      public static com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate parseFrom(
+      public static com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -1149,7 +1149,7 @@ public final class Login {
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate prototype) {
+      public static Builder newBuilder(com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
       public Builder toBuilder() {
@@ -1164,25 +1164,25 @@ public final class Login {
         return builder;
       }
       /**
-       * Protobuf type {@code com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate}
+       * Protobuf type {@code com.demo.mmo.mmo_server.protocals.SC_101.Classmate}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate)
-          com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.ClassmateOrBuilder {
+          // @@protoc_insertion_point(builder_implements:com.demo.mmo.mmo_server.protocals.SC_101.Classmate)
+          com.demo.mmo.mmo_server.protocals.Login.SC_101.ClassmateOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_Classmate_descriptor;
+          return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_SC_101_Classmate_descriptor;
         }
 
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_Classmate_fieldAccessorTable
+          return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_SC_101_Classmate_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate.class, com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate.Builder.class);
+                  com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate.class, com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate.Builder.class);
         }
 
-        // Construct using com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate.newBuilder()
+        // Construct using com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate.newBuilder()
         private Builder() {
           maybeForceBuilderInitialization();
         }
@@ -1210,23 +1210,23 @@ public final class Login {
 
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_Classmate_descriptor;
+          return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_SC_101_Classmate_descriptor;
         }
 
-        public com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate getDefaultInstanceForType() {
-          return com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate.getDefaultInstance();
+        public com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate getDefaultInstanceForType() {
+          return com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate.getDefaultInstance();
         }
 
-        public com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate build() {
-          com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate result = buildPartial();
+        public com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate build() {
+          com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
           return result;
         }
 
-        public com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate buildPartial() {
-          com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate result = new com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate(this);
+        public com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate buildPartial() {
+          com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate result = new com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate(this);
           result.name_ = name_;
           result.sex_ = sex_;
           result.age_ = age_;
@@ -1261,16 +1261,16 @@ public final class Login {
           return (Builder) super.addRepeatedField(field, value);
         }
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate) {
-            return mergeFrom((com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate)other);
+          if (other instanceof com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate) {
+            return mergeFrom((com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate other) {
-          if (other == com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate.getDefaultInstance()) return this;
+        public Builder mergeFrom(com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate other) {
+          if (other == com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate.getDefaultInstance()) return this;
           if (!other.getName().isEmpty()) {
             name_ = other.name_;
             onChanged();
@@ -1293,11 +1293,11 @@ public final class Login {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate parsedMessage = null;
+          com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate parsedMessage = null;
           try {
             parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate) e.getUnfinishedMessage();
+            parsedMessage = (com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
             if (parsedMessage != null) {
@@ -1438,16 +1438,16 @@ public final class Login {
         }
 
 
-        // @@protoc_insertion_point(builder_scope:com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate)
+        // @@protoc_insertion_point(builder_scope:com.demo.mmo.mmo_server.protocals.SC_101.Classmate)
       }
 
-      // @@protoc_insertion_point(class_scope:com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate)
-      private static final com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate DEFAULT_INSTANCE;
+      // @@protoc_insertion_point(class_scope:com.demo.mmo.mmo_server.protocals.SC_101.Classmate)
+      private static final com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate();
+        DEFAULT_INSTANCE = new com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate();
       }
 
-      public static com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate getDefaultInstance() {
+      public static com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
@@ -1470,7 +1470,7 @@ public final class Login {
         return PARSER;
       }
 
-      public com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate getDefaultInstanceForType() {
+      public com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
@@ -1505,36 +1505,36 @@ public final class Login {
     }
 
     public static final int CLASSMATES_FIELD_NUMBER = 4;
-    private java.util.List<com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate> classmates_;
+    private java.util.List<com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate> classmates_;
     /**
-     * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+     * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
      */
-    public java.util.List<com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate> getClassmatesList() {
+    public java.util.List<com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate> getClassmatesList() {
       return classmates_;
     }
     /**
-     * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+     * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
      */
-    public java.util.List<? extends com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.ClassmateOrBuilder> 
+    public java.util.List<? extends com.demo.mmo.mmo_server.protocals.Login.SC_101.ClassmateOrBuilder> 
         getClassmatesOrBuilderList() {
       return classmates_;
     }
     /**
-     * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+     * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
      */
     public int getClassmatesCount() {
       return classmates_.size();
     }
     /**
-     * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+     * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
      */
-    public com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate getClassmates(int index) {
+    public com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate getClassmates(int index) {
       return classmates_.get(index);
     }
     /**
-     * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+     * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
      */
-    public com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.ClassmateOrBuilder getClassmatesOrBuilder(
+    public com.demo.mmo.mmo_server.protocals.Login.SC_101.ClassmateOrBuilder getClassmatesOrBuilder(
         int index) {
       return classmates_.get(index);
     }
@@ -1545,7 +1545,7 @@ public final class Login {
           java.lang.String, java.lang.String> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.String, java.lang.String>newDefaultInstance(
-                  com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_SchoolMapEntry_descriptor, 
+                  com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_SC_101_SchoolMapEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.STRING,
                   "",
                   com.google.protobuf.WireFormat.FieldType.STRING,
@@ -1691,10 +1691,10 @@ public final class Login {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.demo.mmo.mmo_server.protocals.Login.LoginResponse101)) {
+      if (!(obj instanceof com.demo.mmo.mmo_server.protocals.Login.SC_101)) {
         return super.equals(obj);
       }
-      com.demo.mmo.mmo_server.protocals.Login.LoginResponse101 other = (com.demo.mmo.mmo_server.protocals.Login.LoginResponse101) obj;
+      com.demo.mmo.mmo_server.protocals.Login.SC_101 other = (com.demo.mmo.mmo_server.protocals.Login.SC_101) obj;
 
       boolean result = true;
       result = result && (getSuccess()
@@ -1737,58 +1737,58 @@ public final class Login {
       return hash;
     }
 
-    public static com.demo.mmo.mmo_server.protocals.Login.LoginResponse101 parseFrom(
+    public static com.demo.mmo.mmo_server.protocals.Login.SC_101 parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.demo.mmo.mmo_server.protocals.Login.LoginResponse101 parseFrom(
+    public static com.demo.mmo.mmo_server.protocals.Login.SC_101 parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.demo.mmo.mmo_server.protocals.Login.LoginResponse101 parseFrom(byte[] data)
+    public static com.demo.mmo.mmo_server.protocals.Login.SC_101 parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.demo.mmo.mmo_server.protocals.Login.LoginResponse101 parseFrom(
+    public static com.demo.mmo.mmo_server.protocals.Login.SC_101 parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.demo.mmo.mmo_server.protocals.Login.LoginResponse101 parseFrom(java.io.InputStream input)
+    public static com.demo.mmo.mmo_server.protocals.Login.SC_101 parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.demo.mmo.mmo_server.protocals.Login.LoginResponse101 parseFrom(
+    public static com.demo.mmo.mmo_server.protocals.Login.SC_101 parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.demo.mmo.mmo_server.protocals.Login.LoginResponse101 parseDelimitedFrom(java.io.InputStream input)
+    public static com.demo.mmo.mmo_server.protocals.Login.SC_101 parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.demo.mmo.mmo_server.protocals.Login.LoginResponse101 parseDelimitedFrom(
+    public static com.demo.mmo.mmo_server.protocals.Login.SC_101 parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.demo.mmo.mmo_server.protocals.Login.LoginResponse101 parseFrom(
+    public static com.demo.mmo.mmo_server.protocals.Login.SC_101 parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.demo.mmo.mmo_server.protocals.Login.LoginResponse101 parseFrom(
+    public static com.demo.mmo.mmo_server.protocals.Login.SC_101 parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1800,7 +1800,7 @@ public final class Login {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.demo.mmo.mmo_server.protocals.Login.LoginResponse101 prototype) {
+    public static Builder newBuilder(com.demo.mmo.mmo_server.protocals.Login.SC_101 prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -1815,15 +1815,15 @@ public final class Login {
       return builder;
     }
     /**
-     * Protobuf type {@code com.demo.mmo.mmo_server.protocals.LoginResponse101}
+     * Protobuf type {@code com.demo.mmo.mmo_server.protocals.SC_101}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.demo.mmo.mmo_server.protocals.LoginResponse101)
-        com.demo.mmo.mmo_server.protocals.Login.LoginResponse101OrBuilder {
+        // @@protoc_insertion_point(builder_implements:com.demo.mmo.mmo_server.protocals.SC_101)
+        com.demo.mmo.mmo_server.protocals.Login.SC_101OrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_descriptor;
+        return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_SC_101_descriptor;
       }
 
       @SuppressWarnings({"rawtypes"})
@@ -1850,12 +1850,12 @@ public final class Login {
       }
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_fieldAccessorTable
+        return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_SC_101_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.class, com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Builder.class);
+                com.demo.mmo.mmo_server.protocals.Login.SC_101.class, com.demo.mmo.mmo_server.protocals.Login.SC_101.Builder.class);
       }
 
-      // Construct using com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.newBuilder()
+      // Construct using com.demo.mmo.mmo_server.protocals.Login.SC_101.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1891,23 +1891,23 @@ public final class Login {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_descriptor;
+        return com.demo.mmo.mmo_server.protocals.Login.internal_static_com_demo_mmo_mmo_server_protocals_SC_101_descriptor;
       }
 
-      public com.demo.mmo.mmo_server.protocals.Login.LoginResponse101 getDefaultInstanceForType() {
-        return com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.getDefaultInstance();
+      public com.demo.mmo.mmo_server.protocals.Login.SC_101 getDefaultInstanceForType() {
+        return com.demo.mmo.mmo_server.protocals.Login.SC_101.getDefaultInstance();
       }
 
-      public com.demo.mmo.mmo_server.protocals.Login.LoginResponse101 build() {
-        com.demo.mmo.mmo_server.protocals.Login.LoginResponse101 result = buildPartial();
+      public com.demo.mmo.mmo_server.protocals.Login.SC_101 build() {
+        com.demo.mmo.mmo_server.protocals.Login.SC_101 result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.demo.mmo.mmo_server.protocals.Login.LoginResponse101 buildPartial() {
-        com.demo.mmo.mmo_server.protocals.Login.LoginResponse101 result = new com.demo.mmo.mmo_server.protocals.Login.LoginResponse101(this);
+      public com.demo.mmo.mmo_server.protocals.Login.SC_101 buildPartial() {
+        com.demo.mmo.mmo_server.protocals.Login.SC_101 result = new com.demo.mmo.mmo_server.protocals.Login.SC_101(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         result.success_ = success_;
@@ -1956,16 +1956,16 @@ public final class Login {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.demo.mmo.mmo_server.protocals.Login.LoginResponse101) {
-          return mergeFrom((com.demo.mmo.mmo_server.protocals.Login.LoginResponse101)other);
+        if (other instanceof com.demo.mmo.mmo_server.protocals.Login.SC_101) {
+          return mergeFrom((com.demo.mmo.mmo_server.protocals.Login.SC_101)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.demo.mmo.mmo_server.protocals.Login.LoginResponse101 other) {
-        if (other == com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.demo.mmo.mmo_server.protocals.Login.SC_101 other) {
+        if (other == com.demo.mmo.mmo_server.protocals.Login.SC_101.getDefaultInstance()) return this;
         if (other.getSuccess() != false) {
           setSuccess(other.getSuccess());
         }
@@ -2015,11 +2015,11 @@ public final class Login {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.demo.mmo.mmo_server.protocals.Login.LoginResponse101 parsedMessage = null;
+        com.demo.mmo.mmo_server.protocals.Login.SC_101 parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.demo.mmo.mmo_server.protocals.Login.LoginResponse101) e.getUnfinishedMessage();
+          parsedMessage = (com.demo.mmo.mmo_server.protocals.Login.SC_101) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -2108,22 +2108,22 @@ public final class Login {
         return this;
       }
 
-      private java.util.List<com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate> classmates_ =
+      private java.util.List<com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate> classmates_ =
         java.util.Collections.emptyList();
       private void ensureClassmatesIsMutable() {
         if (!((bitField0_ & 0x00000008) == 0x00000008)) {
-          classmates_ = new java.util.ArrayList<com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate>(classmates_);
+          classmates_ = new java.util.ArrayList<com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate>(classmates_);
           bitField0_ |= 0x00000008;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate, com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate.Builder, com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.ClassmateOrBuilder> classmatesBuilder_;
+          com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate, com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate.Builder, com.demo.mmo.mmo_server.protocals.Login.SC_101.ClassmateOrBuilder> classmatesBuilder_;
 
       /**
-       * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+       * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
        */
-      public java.util.List<com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate> getClassmatesList() {
+      public java.util.List<com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate> getClassmatesList() {
         if (classmatesBuilder_ == null) {
           return java.util.Collections.unmodifiableList(classmates_);
         } else {
@@ -2131,7 +2131,7 @@ public final class Login {
         }
       }
       /**
-       * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+       * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
        */
       public int getClassmatesCount() {
         if (classmatesBuilder_ == null) {
@@ -2141,9 +2141,9 @@ public final class Login {
         }
       }
       /**
-       * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+       * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
        */
-      public com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate getClassmates(int index) {
+      public com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate getClassmates(int index) {
         if (classmatesBuilder_ == null) {
           return classmates_.get(index);
         } else {
@@ -2151,10 +2151,10 @@ public final class Login {
         }
       }
       /**
-       * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+       * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
        */
       public Builder setClassmates(
-          int index, com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate value) {
+          int index, com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate value) {
         if (classmatesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2168,10 +2168,10 @@ public final class Login {
         return this;
       }
       /**
-       * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+       * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
        */
       public Builder setClassmates(
-          int index, com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate.Builder builderForValue) {
+          int index, com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate.Builder builderForValue) {
         if (classmatesBuilder_ == null) {
           ensureClassmatesIsMutable();
           classmates_.set(index, builderForValue.build());
@@ -2182,9 +2182,9 @@ public final class Login {
         return this;
       }
       /**
-       * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+       * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
        */
-      public Builder addClassmates(com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate value) {
+      public Builder addClassmates(com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate value) {
         if (classmatesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2198,10 +2198,10 @@ public final class Login {
         return this;
       }
       /**
-       * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+       * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
        */
       public Builder addClassmates(
-          int index, com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate value) {
+          int index, com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate value) {
         if (classmatesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2215,10 +2215,10 @@ public final class Login {
         return this;
       }
       /**
-       * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+       * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
        */
       public Builder addClassmates(
-          com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate.Builder builderForValue) {
+          com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate.Builder builderForValue) {
         if (classmatesBuilder_ == null) {
           ensureClassmatesIsMutable();
           classmates_.add(builderForValue.build());
@@ -2229,10 +2229,10 @@ public final class Login {
         return this;
       }
       /**
-       * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+       * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
        */
       public Builder addClassmates(
-          int index, com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate.Builder builderForValue) {
+          int index, com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate.Builder builderForValue) {
         if (classmatesBuilder_ == null) {
           ensureClassmatesIsMutable();
           classmates_.add(index, builderForValue.build());
@@ -2243,10 +2243,10 @@ public final class Login {
         return this;
       }
       /**
-       * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+       * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
        */
       public Builder addAllClassmates(
-          java.lang.Iterable<? extends com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate> values) {
+          java.lang.Iterable<? extends com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate> values) {
         if (classmatesBuilder_ == null) {
           ensureClassmatesIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2258,7 +2258,7 @@ public final class Login {
         return this;
       }
       /**
-       * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+       * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
        */
       public Builder clearClassmates() {
         if (classmatesBuilder_ == null) {
@@ -2271,7 +2271,7 @@ public final class Login {
         return this;
       }
       /**
-       * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+       * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
        */
       public Builder removeClassmates(int index) {
         if (classmatesBuilder_ == null) {
@@ -2284,16 +2284,16 @@ public final class Login {
         return this;
       }
       /**
-       * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+       * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
        */
-      public com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate.Builder getClassmatesBuilder(
+      public com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate.Builder getClassmatesBuilder(
           int index) {
         return getClassmatesFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+       * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
        */
-      public com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.ClassmateOrBuilder getClassmatesOrBuilder(
+      public com.demo.mmo.mmo_server.protocals.Login.SC_101.ClassmateOrBuilder getClassmatesOrBuilder(
           int index) {
         if (classmatesBuilder_ == null) {
           return classmates_.get(index);  } else {
@@ -2301,9 +2301,9 @@ public final class Login {
         }
       }
       /**
-       * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+       * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
        */
-      public java.util.List<? extends com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.ClassmateOrBuilder> 
+      public java.util.List<? extends com.demo.mmo.mmo_server.protocals.Login.SC_101.ClassmateOrBuilder> 
            getClassmatesOrBuilderList() {
         if (classmatesBuilder_ != null) {
           return classmatesBuilder_.getMessageOrBuilderList();
@@ -2312,33 +2312,33 @@ public final class Login {
         }
       }
       /**
-       * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+       * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
        */
-      public com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate.Builder addClassmatesBuilder() {
+      public com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate.Builder addClassmatesBuilder() {
         return getClassmatesFieldBuilder().addBuilder(
-            com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate.getDefaultInstance());
+            com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate.getDefaultInstance());
       }
       /**
-       * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+       * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
        */
-      public com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate.Builder addClassmatesBuilder(
+      public com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate.Builder addClassmatesBuilder(
           int index) {
         return getClassmatesFieldBuilder().addBuilder(
-            index, com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate.getDefaultInstance());
+            index, com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate.getDefaultInstance());
       }
       /**
-       * <code>repeated .com.demo.mmo.mmo_server.protocals.LoginResponse101.Classmate classmates = 4;</code>
+       * <code>repeated .com.demo.mmo.mmo_server.protocals.SC_101.Classmate classmates = 4;</code>
        */
-      public java.util.List<com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate.Builder> 
+      public java.util.List<com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate.Builder> 
            getClassmatesBuilderList() {
         return getClassmatesFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate, com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate.Builder, com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.ClassmateOrBuilder> 
+          com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate, com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate.Builder, com.demo.mmo.mmo_server.protocals.Login.SC_101.ClassmateOrBuilder> 
           getClassmatesFieldBuilder() {
         if (classmatesBuilder_ == null) {
           classmatesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate, com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.Classmate.Builder, com.demo.mmo.mmo_server.protocals.Login.LoginResponse101.ClassmateOrBuilder>(
+              com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate, com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate.Builder, com.demo.mmo.mmo_server.protocals.Login.SC_101.ClassmateOrBuilder>(
                   classmates_,
                   ((bitField0_ & 0x00000008) == 0x00000008),
                   getParentForChildren(),
@@ -2477,64 +2477,64 @@ public final class Login {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:com.demo.mmo.mmo_server.protocals.LoginResponse101)
+      // @@protoc_insertion_point(builder_scope:com.demo.mmo.mmo_server.protocals.SC_101)
     }
 
-    // @@protoc_insertion_point(class_scope:com.demo.mmo.mmo_server.protocals.LoginResponse101)
-    private static final com.demo.mmo.mmo_server.protocals.Login.LoginResponse101 DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:com.demo.mmo.mmo_server.protocals.SC_101)
+    private static final com.demo.mmo.mmo_server.protocals.Login.SC_101 DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.demo.mmo.mmo_server.protocals.Login.LoginResponse101();
+      DEFAULT_INSTANCE = new com.demo.mmo.mmo_server.protocals.Login.SC_101();
     }
 
-    public static com.demo.mmo.mmo_server.protocals.Login.LoginResponse101 getDefaultInstance() {
+    public static com.demo.mmo.mmo_server.protocals.Login.SC_101 getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<LoginResponse101>
-        PARSER = new com.google.protobuf.AbstractParser<LoginResponse101>() {
-      public LoginResponse101 parsePartialFrom(
+    private static final com.google.protobuf.Parser<SC_101>
+        PARSER = new com.google.protobuf.AbstractParser<SC_101>() {
+      public SC_101 parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new LoginResponse101(input, extensionRegistry);
+          return new SC_101(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<LoginResponse101> parser() {
+    public static com.google.protobuf.Parser<SC_101> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<LoginResponse101> getParserForType() {
+    public com.google.protobuf.Parser<SC_101> getParserForType() {
       return PARSER;
     }
 
-    public com.demo.mmo.mmo_server.protocals.Login.LoginResponse101 getDefaultInstanceForType() {
+    public com.demo.mmo.mmo_server.protocals.Login.SC_101 getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_demo_mmo_mmo_server_protocals_LoginRequest101_descriptor;
+    internal_static_com_demo_mmo_mmo_server_protocals_CS_101_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_demo_mmo_mmo_server_protocals_LoginRequest101_fieldAccessorTable;
+      internal_static_com_demo_mmo_mmo_server_protocals_CS_101_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_descriptor;
+    internal_static_com_demo_mmo_mmo_server_protocals_SC_101_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_fieldAccessorTable;
+      internal_static_com_demo_mmo_mmo_server_protocals_SC_101_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_Classmate_descriptor;
+    internal_static_com_demo_mmo_mmo_server_protocals_SC_101_Classmate_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_Classmate_fieldAccessorTable;
+      internal_static_com_demo_mmo_mmo_server_protocals_SC_101_Classmate_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_SchoolMapEntry_descriptor;
+    internal_static_com_demo_mmo_mmo_server_protocals_SC_101_SchoolMapEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_SchoolMapEntry_fieldAccessorTable;
+      internal_static_com_demo_mmo_mmo_server_protocals_SC_101_SchoolMapEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -2545,17 +2545,16 @@ public final class Login {
   static {
     java.lang.String[] descriptorData = {
       "\n\013login.proto\022!com.demo.mmo.mmo_server.p" +
-      "rotocals\"0\n\017LoginRequest101\022\014\n\004name\030\001 \001(" +
-      "\t\022\017\n\007account\030\002 \001(\t\"\316\002\n\020LoginResponse101\022" +
-      "\017\n\007success\030\001 \001(\010\022\013\n\003age\030\002 \001(\021\022\013\n\003sex\030\003 \001" +
-      "(\021\022Q\n\nclassmates\030\004 \003(\0132=.com.demo.mmo.mm" +
-      "o_server.protocals.LoginResponse101.Clas" +
-      "smate\022U\n\tschoolMap\030\005 \003(\0132B.com.demo.mmo." +
-      "mmo_server.protocals.LoginResponse101.Sc" +
-      "hoolMapEntry\0323\n\tClassmate\022\014\n\004name\030\001 \001(\t\022" +
-      "\013\n\003sex\030\002 \001(\005\022\013\n\003age\030\003 \001(\005\0320\n\016SchoolMapEn",
-      "try\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001b\006pro" +
-      "to3"
+      "rotocals\"\'\n\006CS_101\022\014\n\004name\030\001 \001(\t\022\017\n\007acco" +
+      "unt\030\002 \001(\t\"\260\002\n\006SC_101\022\017\n\007success\030\001 \001(\010\022\013\n" +
+      "\003age\030\002 \001(\021\022\013\n\003sex\030\003 \001(\021\022G\n\nclassmates\030\004 " +
+      "\003(\01323.com.demo.mmo.mmo_server.protocals." +
+      "SC_101.Classmate\022K\n\tschoolMap\030\005 \003(\01328.co" +
+      "m.demo.mmo.mmo_server.protocals.SC_101.S" +
+      "choolMapEntry\0323\n\tClassmate\022\014\n\004name\030\001 \001(\t" +
+      "\022\013\n\003sex\030\002 \001(\005\022\013\n\003age\030\003 \001(\005\0320\n\016SchoolMapE" +
+      "ntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001b\006pr",
+      "oto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -2569,29 +2568,29 @@ public final class Login {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static_com_demo_mmo_mmo_server_protocals_LoginRequest101_descriptor =
+    internal_static_com_demo_mmo_mmo_server_protocals_CS_101_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_com_demo_mmo_mmo_server_protocals_LoginRequest101_fieldAccessorTable = new
+    internal_static_com_demo_mmo_mmo_server_protocals_CS_101_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_demo_mmo_mmo_server_protocals_LoginRequest101_descriptor,
+        internal_static_com_demo_mmo_mmo_server_protocals_CS_101_descriptor,
         new java.lang.String[] { "Name", "Account", });
-    internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_descriptor =
+    internal_static_com_demo_mmo_mmo_server_protocals_SC_101_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_fieldAccessorTable = new
+    internal_static_com_demo_mmo_mmo_server_protocals_SC_101_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_descriptor,
+        internal_static_com_demo_mmo_mmo_server_protocals_SC_101_descriptor,
         new java.lang.String[] { "Success", "Age", "Sex", "Classmates", "SchoolMap", });
-    internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_Classmate_descriptor =
-      internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_descriptor.getNestedTypes().get(0);
-    internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_Classmate_fieldAccessorTable = new
+    internal_static_com_demo_mmo_mmo_server_protocals_SC_101_Classmate_descriptor =
+      internal_static_com_demo_mmo_mmo_server_protocals_SC_101_descriptor.getNestedTypes().get(0);
+    internal_static_com_demo_mmo_mmo_server_protocals_SC_101_Classmate_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_Classmate_descriptor,
+        internal_static_com_demo_mmo_mmo_server_protocals_SC_101_Classmate_descriptor,
         new java.lang.String[] { "Name", "Sex", "Age", });
-    internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_SchoolMapEntry_descriptor =
-      internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_descriptor.getNestedTypes().get(1);
-    internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_SchoolMapEntry_fieldAccessorTable = new
+    internal_static_com_demo_mmo_mmo_server_protocals_SC_101_SchoolMapEntry_descriptor =
+      internal_static_com_demo_mmo_mmo_server_protocals_SC_101_descriptor.getNestedTypes().get(1);
+    internal_static_com_demo_mmo_mmo_server_protocals_SC_101_SchoolMapEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_demo_mmo_mmo_server_protocals_LoginResponse101_SchoolMapEntry_descriptor,
+        internal_static_com_demo_mmo_mmo_server_protocals_SC_101_SchoolMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
   }
 

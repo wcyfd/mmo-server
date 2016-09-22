@@ -4,7 +4,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.demo.mmo.mmo_server.protocals.Login.LoginResponse101;
+import com.demo.mmo.mmo_server.protocals.Login.SC_101;
 import com.google.protobuf.ByteString;
 import com.google.protobuf.Descriptors.FieldDescriptor;
 import com.google.protobuf.InvalidProtocolBufferException;
@@ -30,6 +30,6 @@ public class ResponseNavigation {
 	}
 
 	public static void init() {
-		classMap.put(ResponseProtocal.LOGIN, LoginResponse101.class);
+		classMap.put(ResponseProtocal.LOGIN, SC_101.class);
 	}
 }

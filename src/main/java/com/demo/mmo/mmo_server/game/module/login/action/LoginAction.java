@@ -22,7 +22,7 @@ public class LoginAction implements ActionSupport {
 			LoginRequest101 data101 = LoginRequest101.parseFrom(data);
 			String name = data101.getName();
 			String account = data101.getAccount();
-			Response.Builder builder = loginService.login(name,account);
+			Response.Builder builder = loginService.login(name, account);
 			session.write(builder);
 		} catch (InvalidProtocolBufferException e) {
 			// TODO Auto-generated catch block

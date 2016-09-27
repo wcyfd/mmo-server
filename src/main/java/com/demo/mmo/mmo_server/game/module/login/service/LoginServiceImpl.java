@@ -1,5 +1,6 @@
 package com.demo.mmo.mmo_server.game.module.login.service;
 
+import com.demo.mmo.mmo_server.game.navigation.ResponseProtocal;
 import com.demo.mmo.mmo_server.protocals.Login.SC_101;
 import com.demo.mmo.mmo_server.protocals.Login.SC_101.Classmate;
 import com.demo.mmo.mmo_server.protocals.base.Protocal.Response;
@@ -26,11 +27,7 @@ public class LoginServiceImpl implements LoginService {
 		}
 		SC_101 data = builder101.build();
 
-		Response.Builder respB = Response.newBuilder();
-		respB.setProtocal(101);
-		respB.setData(data.toByteString());
-
-		return respB;
+		return Response.newBuilder().setProtocal(ResponseProtocal.LOGIN).setData(data.toByteString());
 	}
 
 }

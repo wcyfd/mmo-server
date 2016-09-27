@@ -14,7 +14,7 @@ import com.google.protobuf.InvalidProtocolBufferException;
  * 消息处理器
  * 
  */
-public class ClientHandler extends IoHandlerProxy {
+public class ClientHandler extends IoHandlerProxy{
 
 	// 当一个客户端连结进入时
 	@Override

@@ -1,0 +1,47 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+	<bean id="roleDao" class="com.randioo.owlofwar.owlofwar.game.db.impl.RoleDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="cardDao" class="com.randioo.owlofwar.owlofwar.game.db.impl.CardDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="pubDao" class="com.randioo.owlofwar.owlofwar.game.db.impl.PubDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="warDao" class="com.randioo.owlofwar.owlofwar.game.db.impl.WarDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="legionDao" class="com.randioo.owlofwar.owlofwar.game.db.impl.LegionDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="propDao" class="com.randioo.owlofwar.owlofwar.game.db.impl.PropDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="marketDao" class="com.randioo.owlofwar.owlofwar.game.db.impl.MarketDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="incomeDao" class="com.randioo.owlofwar.owlofwar.game.db.impl.IncomeDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="techDao" class="com.randioo.owlofwar.owlofwar.game.db.impl.TechDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="mailDao" class="com.randioo.owlofwar.owlofwar.game.db.impl.MailDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="annalsDao" class="com.randioo.owlofwar.owlofwar.game.db.impl.AnnalsDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="roleDataDao" class="com.randioo.owlofwar.owlofwar.game.db.impl.RoleDataDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="gameLogDao" class="com.randioo.owlofwar.owlofwar.game.db.impl.GameLogDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+
+</beans>

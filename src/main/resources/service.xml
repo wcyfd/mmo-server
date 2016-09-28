@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-3.1.xsd 
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd 
+    http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.1.xsd 
+    http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd 
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+<!-- 
+	<bean id="testService" class="com.randioo.owlofwar.owlofwar.game.moudle.test.service.TestServiceImpl">
+		<property name="cardService" ref="cardService"></property>
+		<property name="annalsService" ref="annalsService"></property>
+		<property name="mailService" ref="mailService"></property>
+		<property name="incomeService" ref="incomeService"></property>
+	</bean>
+
+	<bean id="loginService" class="com.randioo.owlofwar.owlofwar.game.moudle.login.service.LoginServiceImpl">
+		<property name="roleDao" ref="roleDao"></property>
+		<property name="cardDao" ref="cardDao"></property>
+		<property name="pubDao" ref="pubDao"></property>
+		<property name="cardService" ref="cardService"></property>
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="warDao" ref="warDao"></property>
+		<property name="warService" ref="warService"></property>
+		<property name="propDao" ref="propDao"></property>
+		<property name="marketDao" ref="marketDao"></property>
+		<property name="marketService" ref="marketService"></property>
+		<property name="incomeDao" ref="incomeDao"></property>
+		<property name="incomeService" ref="incomeService"></property>
+		<property name="techDao" ref="techDao"></property>
+		<property name="mailDao" ref="mailDao"></property>
+		<property name="annalsDao" ref="annalsDao"></property>
+		<property name="annalsService" ref="annalsService"></property>
+		<property name="roleService" ref="roleService"></property>
+		<property name="gmService" ref="gmService"></property>
+		<property name="guideService" ref="guideService"></property>
+	</bean>
+ -->
+	<bean id="fightService" class="com.demo.mmo.mmo_server.game.module.fight.service.FightServiceImpl">
+		
+	</bean>
+<!-- 
+	<bean id="cardService" class="com.randioo.owlofwar.owlofwar.game.moudle.card.service.CardServiceImpl">
+		<property name="roleService" ref="roleService"></property>
+		<property name="cardDao" ref="cardDao"></property>
+	</bean>
+
+	<bean id="pubService" class="com.randioo.owlofwar.owlofwar.game.moudle.pub.service.PubServiceImpl">
+		<property name="incomeService" ref="incomeService"></property>
+	</bean>
+
+	<bean id="roleService" class="com.randioo.owlofwar.owlofwar.game.moudle.role.service.RoleServiceImpl">
+		<property name="loginService" ref="loginService"></property>
+		<property name="annalsService" ref="annalsService"></property>
+		<property name="legionService" ref="legionService"></property>
+		<property name="roleDao" ref="roleDao"></property>
+	</bean>
+
+	<bean id="warService" class="com.randioo.owlofwar.owlofwar.game.moudle.war.service.WarServiceImpl">
+		<property name="roleService" ref="roleService"></property>
+		<property name="cardService" ref="cardService"></property>
+		<property name="annalsService" ref="annalsService"></property>
+		<property name="incomeService" ref="incomeService"></property>
+		<property name="mailService" ref="mailService"></property>
+		<property name="legionService" ref="legionService"></property>
+	</bean>
+
+	<bean id="legionService" class="com.randioo.owlofwar.owlofwar.game.moudle.legion.service.LegionServiceImpl">
+		<property name="roleService" ref="roleService"></property>
+		<property name="legionDao" ref="legionDao"></property>
+		<property name="annalsService" ref="annalsService"></property>
+		<property name="incomeService" ref="incomeService"></property>
+		<property name="fightService" ref="fightService"></property>
+	</bean>
+
+	<bean id="propService" class="com.randioo.owlofwar.owlofwar.game.moudle.prop.service.PropServiceImpl">
+		<property name="propDao" ref="propDao"></property>
+		<property name="roleService" ref="roleService"></property>
+		<property name="annalsService" ref="annalsService"></property>
+	</bean>
+	<bean id="gmService" class="com.randioo.owlofwar.owlofwar.game.moudle.gm.service.GMServiceImpl">
+		<property name="mailService" ref="mailService"></property>
+		<property name="roleDataDao" ref="roleDataDao"></property>
+		<property name="gameLogDao" ref="gameLogDao"></property>
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+	<bean id="marketService" class="com.randioo.owlofwar.owlofwar.game.moudle.market.service.MarketServiceImpl">
+		<property name="roleService" ref="roleService"></property>
+		<property name="propService" ref="propService"></property>
+		<property name="incomeService" ref="incomeService"></property>
+	</bean>
+
+	<bean id="incomeService" class="com.randioo.owlofwar.owlofwar.game.moudle.income.service.IncomeServiceImpl">
+		<property name="propService" ref="propService"></property>
+		<property name="roleService" ref="roleService"></property>
+		<property name="cardService" ref="cardService"></property>
+		<property name="trainService" ref="trainService"></property>
+		<property name="annalsService" ref="annalsService"></property>
+		<property name="warService" ref="warService"></property>
+	</bean>
+
+	<bean id="techService" class="com.randioo.owlofwar.owlofwar.game.moudle.tech.service.TechServiceImpl">
+		<property name="incomeService" ref="incomeService"></property>
+		<property name="roleService" ref="roleService"></property>
+		<property name="propService" ref="propService"></property>
+	</bean>
+
+	<bean id="trainService" class="com.randioo.owlofwar.owlofwar.game.moudle.train.service.TrainServiceImpl">
+		<property name="incomeService" ref="incomeService"></property>
+		<property name="roleService" ref="roleService"></property>
+	</bean>
+
+	<bean id="annalsService" class="com.randioo.owlofwar.owlofwar.game.moudle.annals.service.AnnalsServiceImpl">
+		<property name="incomeService" ref="incomeService"></property>
+	</bean>
+
+	<bean id="mailService" class="com.randioo.owlofwar.owlofwar.game.moudle.mail.service.MailServiceImpl">
+		<property name="mailDao" ref="mailDao"></property>
+		<property name="fightService" ref="fightService"></property>
+	</bean>
+	
+	<bean id="guideService" class="com.randioo.owlofwar.owlofwar.game.moudle.guide.service.GuideServiceImpl">
+		<property name="cardDao" ref="cardDao"></property>
+	</bean>
+	 -->
+</beans>

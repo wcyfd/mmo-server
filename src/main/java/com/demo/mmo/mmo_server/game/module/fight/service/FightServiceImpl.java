@@ -1,10 +1,17 @@
 package com.demo.mmo.mmo_server.game.module.fight.service;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Map;
+import java.util.Set;
+
+import org.apache.mina.core.session.IoSession;
 
 import com.demo.mmo.mmo_entity.game.entity.po.FightInfo;
 import com.demo.mmo.mmo_entity.game.entity.po.Room;
 import com.demo.mmo.mmo_server.game.cache.RoomCache;
+import com.demo.mmo.mmo_server.game.cache.SessionCache;
+import com.demo.mmo.mmo_server.game.common.ErrorCode;
 import com.demo.mmo.mmo_server.game.navigation.ResponseProtocal;
 import com.demo.mmo.mmo_server.protocals.Fight.SC_301;
 import com.demo.mmo.mmo_server.protocals.Fight.SC_302;
@@ -22,25 +29,17 @@ public class FightServiceImpl implements FightService {
 
 		SC_301.Builder sc301 = SC_301.newBuilder();
 
-		Map<Integer, Room> roomMap = RoomCache.getRoomMap();
+		Room room = RoomCache.getRoomMap().get(0);
 
-		Room room = roomMap.get(0);
-		if (room == null) {
-			room = new Room();
-			room.setWidth(1024.0f);
-			room.setHeight(1024.0f);
-			room.setId(0);
-			roomMap.put(room.getId(), room);
-		}
-		sc301.setErrorCode(1);
+		sc301.setErrorCode(ErrorCode.SUCCESS);
 		FightInfo fightInfo = this.createFight(roleId);
 		sc301.setSelfX(fightInfo.getX()).setSelfY(fightInfo.getY());
-		for (FightInfo info : room.getClientFightInfoMap().values()) {
+		for (FightInfo info : room.getFightInfoMap().values()) {
 			SC_301.FightInfo scFightInfo = SC_301.FightInfo.newBuilder().setX(info.getX()).setY(info.getY())
 					.setRoleId(info.getRoleId()).build();
 			sc301.addOtherFightinfo(scFightInfo);
 		}
-		room.getClientFightInfoMap().put(roleId, fightInfo);
+		room.getFightInfoMap().put(roleId, fightInfo);
 
 		resp.setData(sc301.build().toByteString());
 
@@ -57,8 +56,8 @@ public class FightServiceImpl implements FightService {
 	private FightInfo createFight(int roleId) {
 		FightInfo fightInfo = new FightInfo();
 		fightInfo.setRoleId(roleId);
-		int initX = 0;
-		int initY = 0;
+		float initX = 0.0f;
+		float initY = 0.0f;
 
 		fightInfo.setX(initX);
 		fightInfo.setY(initY);
@@ -66,7 +65,7 @@ public class FightServiceImpl implements FightService {
 	}
 
 	@Override
-	public Builder move(int roleId, int x, int y) {
+	public Builder move(int roleId, float x, float y) {
 		Builder respBuilder = Response.newBuilder();
 		respBuilder.setProtocal(ResponseProtocal.FIGHT_MOVE);
 		long nowTime = Utils.getNowLongTime();
@@ -75,12 +74,35 @@ public class FightServiceImpl implements FightService {
 
 		return respBuilder;
 	}
-	
-	public void refreshPosition(int roleId,int x,int y){
+
+	private void refreshPosition(int roleId, float x, float y) {
 		Room room = RoomCache.getRoomMap().get(0);
-		for(FightInfo fightInfo :room.getClientFightInfoMap().values()){
-			
+		Map<Integer, FightInfo> fightInfoMap = room.getFightInfoMap();
+		FightInfo fightInfo = fightInfoMap.get(roleId);
+		float oldX = fightInfo.getX();
+		float oldY = fightInfo.getY();
+		if (this.checkPosition(x, y, oldX, oldY)) {
+			fightInfo.setX(x);
+			fightInfo.setY(y);
 		}
+		
+		
+
+	}
+	
+	private void sendPosition(Room room){
+		Set<Integer> roleIdSet = room.getFightInfoMap().keySet();
+		for(Integer roleId :roleIdSet){
+			
+		
+		}
+		
+		
+	}
+
+	private boolean checkPosition(float x, float y, float oldX, float oldY) {
+		// TODO Auto-generated method stub
+		return true;
 	}
 
 	public long getPing(int roleId, long time) {

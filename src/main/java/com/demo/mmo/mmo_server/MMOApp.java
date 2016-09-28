@@ -1,8 +1,10 @@
 package com.demo.mmo.mmo_server;
 
 import java.net.InetSocketAddress;
+import java.util.Map;
 
-import com.demo.mmo.mmo_entity.game.entity.bo.Role;
+import com.demo.mmo.mmo_entity.game.entity.po.Room;
+import com.demo.mmo.mmo_server.game.cache.RoomCache;
 import com.demo.mmo.mmo_server.game.navigation.ActionNavigation;
 import com.demo.mmo.mmo_server.game.navigation.ResponseNavigation;
 import com.demo.mmo.mmo_server.remote.ClientHandler;
@@ -22,8 +24,20 @@ public class MMOApp {
 		ActionNavigation.init();
 		ResponseNavigation.init();
 
+		init();
+
 		ServerConfig.loadConfig(10001);
 		WanServer.startIOServer(new ClientHandler(), new InetSocketAddress(ServerConfig.getWanServerPort()));
+	}
+
+	private static void init() {
+		Map<Integer, Room> roomMap = RoomCache.getRoomMap();
+
+		Room room = new Room();
+		room.setWidth(1024.0f);
+		room.setHeight(1024.0f);
+		room.setId(0);
+		roomMap.put(room.getId(), room);
 	}
 
 	// public static void main(String[] args) {

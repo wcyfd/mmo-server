@@ -7,12 +7,12 @@ message CS_301{
 
 message SC_301{
 	int32 errorCode=1;
-	int32 selfX = 2;
-	int32 selfY =3;
+	float selfX = 2;
+	float selfY =3;
 
 	message FightInfo{
-		int32 x = 1;
-		int32 y = 2;
+		float x = 1;
+		float y = 2;
 		int32 roleId = 3;
 	}
 	
@@ -20,14 +20,25 @@ message SC_301{
 }
 
 message CS_302{
-	int32 x = 1;
-	int32 y = 2;
+	float x = 1;
+	float y = 2;
 	int32 roleId = 3;	
 }
 
 message SC_302{
-	int32 x = 1;
-	int32 y = 2;
+	float x = 1;
+	float y = 2;
 	int64 time = 3;
 	int32 roleId = 4;
+}
+
+message SC_303{
+	message FightInfo{
+		int32 roleId = 1;
+		float x = 2;
+		float y = 3;
+		
+	}
+
+	repeated FightInfo fightInfos = 1;
 }

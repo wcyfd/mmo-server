@@ -19,10 +19,10 @@ public class LoginAction implements ActionSupport {
 	@Override
 	public void execute(ByteString data, IoSession session) {
 		try {
-			CS_101 data101 = CS_101.parseFrom(data); 
+			CS_101 data101 = CS_101.parseFrom(data);
 			String name = data101.getName();
 			String account = data101.getAccount();
-			Response.Builder builder = loginService.login(name, account);
+			Response.Builder builder = loginService.login(account);
 			session.write(builder);
 		} catch (InvalidProtocolBufferException e) {
 			// TODO Auto-generated catch block

@@ -2,20 +2,18 @@ syntax = "proto3";
 package com.demo.mmo.mmo_server.protocals;
 
 message CS_101{
-	string name=1;
-	string account=2;	
+	string account=1;	
 }
 
 message SC_101{
-	bool success=1;
-	sint32 age=2;
-	sint32 sex = 3;
-	
-	repeated Classmate classmates=4;
-	message Classmate{
-		string name=1;
-		int32 sex = 2;
-		int32 age = 3;
-	}
-	map<string,string> schoolMap=5;
+	int32 errorCode=1;	
+}
+
+message CS_102{
+	string account=1;
+	string name=2;
+}
+
+message SC_102{
+	int32 errorCode = 1;
 }

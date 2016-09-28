@@ -1,0 +1,33 @@
+syntax = "proto3";
+package com.demo.mmo.mmo_server.protocals;
+
+message CS_301{
+	int32 roleId =1;
+}
+
+message SC_301{
+	int32 errorCode=1;
+	int32 selfX = 2;
+	int32 selfY =3;
+
+	message FightInfo{
+		int32 x = 1;
+		int32 y = 2;
+		int32 roleId = 3;
+	}
+	
+	repeated FightInfo otherFightinfo = 4;
+}
+
+message CS_302{
+	int32 x = 1;
+	int32 y = 2;
+	int32 roleId = 3;	
+}
+
+message SC_302{
+	int32 x = 1;
+	int32 y = 2;
+	int64 time = 3;
+	int32 roleId = 4;
+}

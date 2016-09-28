@@ -46,7 +46,7 @@
 						<configuration>
 							<transformers>
 								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>com.randioo.owlofwar.owlofwar.game.StartApp</mainClass>
+									<mainClass>com.demo.mmo.mmo_server.MMOApp</mainClass>
 								</transformer>
 								<transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
 									<resource>META-INF/spring.handlers</resource>
@@ -68,18 +68,16 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>com.demo.mmo</groupId>
+			<artifactId>mmo-entity</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>3.8.1</version>
 			<scope>test</scope>
-		</dependency>
-
-		<!-- jbox2d -->
-		<!-- https://mvnrepository.com/artifact/org.jbox2d/jbox2d-library -->
-		<dependency>
-			<groupId>org.jbox2d</groupId>
-			<artifactId>jbox2d-library</artifactId>
-			<version>2.2.1.1</version>
 		</dependency>
 
 		<!-- db -->

@@ -9,11 +9,12 @@ public class PrintToClientMessage {
 
 	public static void print(Integer roleId, int protocal, Map<FieldDescriptor, Object> map) {
 
-		System.out.println("-------------" + format + roleId + " protocal:" + protocal + "-------------");
+//		System.out.println("-------------" + format + roleId + " protocal:" + protocal + "-------------");
 		if (map != null) {
 			for (Map.Entry<FieldDescriptor, Object> entry : map.entrySet()) {
 				String fieldName = entry.getKey().getName();
-				System.out.println(format + roleId + " " + fieldName + ":" + entry.getValue());
+				System.out
+						.println(format + roleId + " protocal:" + protocal + " " + fieldName + ":" + entry.getValue());
 			}
 		}
 	}

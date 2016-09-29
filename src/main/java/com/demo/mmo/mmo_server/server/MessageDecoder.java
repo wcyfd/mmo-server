@@ -7,7 +7,7 @@ import org.apache.mina.core.session.IoSession;
 import org.apache.mina.filter.codec.CumulativeProtocolDecoder;
 import org.apache.mina.filter.codec.ProtocolDecoderOutput;
 
-import com.demo.mmo.mmo_server.protocals.base.Protocal.Request;
+import com.demo.mmo.mmo_entity.game.entity.net.base.Protocal.Request;
 
 public class MessageDecoder extends CumulativeProtocolDecoder {
 	protected boolean doDecode(IoSession session, IoBuffer in, ProtocolDecoderOutput out) throws Exception {

@@ -9,8 +9,10 @@
 
 
 	<bean id="navigation" class="com.demo.mmo.mmo_server.game.navigation.ActionNavigation" 	
+		p:fightJoinAction-ref="fightJoinAction"
 		p:fightMoveAction-ref="fightMoveAction" />
 		
+	<bean id="fightJoinAction" class="com.demo.mmo.mmo_server.game.module.fight.action.FightJoinAction" p:fightService-ref="fightService" />
 	<bean id="fightMoveAction" class="com.demo.mmo.mmo_server.game.module.fight.action.FightMoveAction" p:fightService-ref="fightService" />
 	
 

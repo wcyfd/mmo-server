@@ -49,6 +49,7 @@ public class WanServer {
 		dsc.setSendBufferSize(1024);
 		dsc.setReceiveBufferSize(1024);
 		dsc.setReuseAddress(true);
+		dsc.setIdleTime(IdleStatus.BOTH_IDLE, 60);
 
 		DefaultIoFilterChainBuilder chain = ioAcceptor.getFilterChain();
 

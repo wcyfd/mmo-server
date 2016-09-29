@@ -6,8 +6,8 @@ public class ActionProtocal {
 	/**
 	 * 战斗
 	 */
-	/** 战斗初始化 */
-	public final static int FIGHT_INIT = 301;
+	/** 加入战斗 */
+	public final static int FIGHT_JOIN = 301;
 	/** 战斗中的位置移动 */
 	public final static int FIGHT_MOVE = 302;
 }

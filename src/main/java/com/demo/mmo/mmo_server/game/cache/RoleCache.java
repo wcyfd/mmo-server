@@ -35,7 +35,7 @@ public class RoleCache {
 			lock.lock();
 			role.setRoleId(roleMap.size() + 1);
 			roleMap.put(role.getRoleId(), role);
-			accountMap.put(role.getAccount(), role);
+//			accountMap.put(role.getAccount(), role);
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {

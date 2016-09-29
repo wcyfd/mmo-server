@@ -7,7 +7,7 @@ import org.apache.mina.core.session.IoSession;
 import org.apache.mina.filter.codec.ProtocolEncoderAdapter;
 import org.apache.mina.filter.codec.ProtocolEncoderOutput;
 
-import com.demo.mmo.mmo_server.protocals.base.Protocal.Response;
+import com.demo.mmo.mmo_entity.game.entity.net.base.Protocal.Response;
 
 public class MessageEncoder extends ProtocolEncoderAdapter {
 	public void encode(IoSession session, Object message, ProtocolEncoderOutput out) throws Exception {

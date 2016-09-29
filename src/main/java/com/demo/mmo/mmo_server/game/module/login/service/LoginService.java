@@ -2,7 +2,7 @@ package com.demo.mmo.mmo_server.game.module.login.service;
 
 import org.apache.mina.core.session.IoSession;
 
-import com.demo.mmo.mmo_server.protocals.base.Protocal.Response.Builder;
+import com.demo.mmo.mmo_entity.game.entity.net.base.Protocal.Response.Builder;
 
 public interface LoginService {
 	

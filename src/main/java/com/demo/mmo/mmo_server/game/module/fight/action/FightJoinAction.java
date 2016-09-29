@@ -2,6 +2,7 @@ package com.demo.mmo.mmo_server.game.module.fight.action;
 
 import org.apache.mina.core.session.IoSession;
 
+import com.demo.mmo.mmo_entity.game.entity.net.base.Protocal.Response.Builder;
 import com.demo.mmo.mmo_server.game.cache.RoleCache;
 import com.demo.mmo.mmo_server.game.module.fight.service.FightService;
 import com.demo.mmo.mmo_server.game.navigation.ActionSupport;
@@ -17,8 +18,11 @@ public class FightJoinAction implements ActionSupport {
 
 	@Override
 	public void execute(ByteString data, IoSession session) {
-		int roleId = RoleCache.getRoleIdBySession(session);
-		fightService.joinFight(roleId);
+//		int roleId = RoleCache.getRoleIdBySession(session);
+		Builder builder = fightService.joinFight(session);
+		if (session != null) {
+			session.write(builder);
+		}
 	}
 
 }

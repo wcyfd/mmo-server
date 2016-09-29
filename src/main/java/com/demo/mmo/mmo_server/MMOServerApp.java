@@ -7,6 +7,7 @@ import com.demo.mmo.mmo_entity.game.entity.po.Room;
 import com.demo.mmo.mmo_server.game.cache.RoomCache;
 import com.demo.mmo.mmo_server.game.navigation.ActionNavigation;
 import com.demo.mmo.mmo_server.game.navigation.ResponseNavigation;
+import com.demo.mmo.mmo_server.game.schedule.FightScheduled;
 import com.demo.mmo.mmo_server.remote.ClientHandler;
 import com.demo.mmo.mmo_server.server.ServerConfig;
 import com.demo.mmo.mmo_server.server.SpringContext;
@@ -16,7 +17,7 @@ import com.demo.mmo.mmo_server.server.WanServer;
  * Hello world!
  *
  */
-public class MMOApp {
+public class MMOServerApp {
 	private static final String START_CONFIG_FILE = "ApplicationContext.xml";
 
 	public static void main(String[] args) {
@@ -38,6 +39,8 @@ public class MMOApp {
 		room.setHeight(1024.0f);
 		room.setId(0);
 		roomMap.put(room.getId(), room);
+		
+		FightScheduled.start();
 	}
 
 	// public static void main(String[] args) {

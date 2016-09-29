@@ -1,25 +1,42 @@
 package com.demo.mmo.mmo_server.remote;
 
+import java.net.InetAddress;
+import java.net.InetSocketAddress;
+import java.util.Map;
+
 import org.apache.mina.core.session.IoSession;
 
+import com.demo.mmo.mmo_entity.game.entity.net.Fight.FightInfo;
+import com.demo.mmo.mmo_entity.game.entity.net.Fight.SC_302;
+import com.demo.mmo.mmo_entity.game.entity.net.base.Protocal.Request;
+import com.demo.mmo.mmo_entity.game.entity.net.base.Protocal.Response;
+import com.demo.mmo.mmo_entity.game.entity.net.base.Protocal.Response.Builder;
 import com.demo.mmo.mmo_server.game.navigation.ActionNavigation;
 import com.demo.mmo.mmo_server.game.navigation.ActionSupport;
 import com.demo.mmo.mmo_server.game.navigation.ResponseNavigation;
-import com.demo.mmo.mmo_server.protocals.base.Protocal.Request;
-import com.demo.mmo.mmo_server.protocals.base.Protocal.Response;
+import com.demo.mmo.mmo_server.game.navigation.ResponseProtocal;
 import com.demo.mmo.mmo_server.server.IoHandlerProxy;
+import com.demo.mmo.mmo_server.server.Message;
+import com.google.protobuf.Descriptors.FieldDescriptor;
+import com.google.protobuf.ByteString;
 import com.google.protobuf.InvalidProtocolBufferException;
 
 /**
  * 消息处理器
  * 
  */
-public class ClientHandler extends IoHandlerProxy{
+public class ClientHandler extends IoHandlerProxy {
 
 	// 当一个客户端连结进入时
 	@Override
 	public void sessionOpened(IoSession session) throws Exception {
 		System.out.println(session.getRemoteAddress() + "打开连接");
+		InetSocketAddress socketAdd =((InetSocketAddress)session.getRemoteAddress());
+		InetAddress address = socketAdd.getAddress();
+		String clientIP = address.getHostAddress();
+		int port = socketAdd.getPort();
+		
+		System.out.println(clientIP+" "+port);
 	}
 
 	// 当一个 新的session创建时
@@ -81,7 +98,7 @@ public class ClientHandler extends IoHandlerProxy{
 			// 判断是否属于无效的协议号 TODO 处理方式可能需要变更
 			// if(e.getClass().equals(NumberFakeException.class))
 			// {
-			 session.close(true);
+			session.close(true);
 			// }
 		}
 	}
@@ -91,13 +108,22 @@ public class ClientHandler extends IoHandlerProxy{
 	@Override
 	public void messageSent(IoSession session, Object message) {
 		Integer roleId = (Integer) session.getAttribute("roleId");
-		Response msg = (Response) message;
+		Builder msg = (Builder) message;
 
 		try {
-			PrintToClientMessage.print(roleId, msg.getProtocal(), ResponseNavigation.getAttribute(msg.getProtocal(), msg.getData()));
-		} catch (InvalidProtocolBufferException e) {
+//			ByteString d = msg.getData();
+//			byte[] bytes = d.toByteArray();
+//			for(int i = 0;i<bytes.length;i++){
+//				System.out.print(bytes[i]+",");
+//			}
+//			System.out.println();
+			Map<FieldDescriptor, Object> map = ResponseNavigation.getAttribute(msg.getProtocal(), msg.getData());
+			PrintToClientMessage.print(roleId, msg.getProtocal(), map);
+		} catch (InvalidProtocolBufferException e1) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			e1.printStackTrace();
 		}
+
+
 	}
 }

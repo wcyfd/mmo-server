@@ -5,38 +5,47 @@ import java.util.concurrent.locks.ReentrantLock;
 import org.apache.mina.core.session.IoSession;
 
 import com.demo.mmo.mmo_entity.game.entity.bo.Role;
+import com.demo.mmo.mmo_entity.game.entity.net.Login.CS_102;
+import com.demo.mmo.mmo_entity.game.entity.net.Login.SC_102;
+import com.demo.mmo.mmo_entity.game.entity.net.base.Protocal.Response;
+import com.demo.mmo.mmo_entity.game.entity.net.base.Protocal.Response.Builder;
 import com.demo.mmo.mmo_server.game.cache.RoleCache;
 import com.demo.mmo.mmo_server.game.cache.SessionCache;
 import com.demo.mmo.mmo_server.game.common.ErrorCode;
 import com.demo.mmo.mmo_server.game.navigation.ResponseProtocal;
-import com.demo.mmo.mmo_server.protocals.Login.SC_101;
-import com.demo.mmo.mmo_server.protocals.base.Protocal.Response;
-import com.demo.mmo.mmo_server.protocals.base.Protocal.Response.Builder;
 
 public class LoginServiceImpl implements LoginService {
 
 	private ReentrantLock lock = new ReentrantLock();
+
 	@Override
-	public Builder login(String account) {		
+	public Builder login(String account) {
 		Builder respBuilder = Response.newBuilder();
 		respBuilder.setProtocal(ResponseProtocal.LOGIN);
-		
+
 		return respBuilder;
 	}
 
 	@Override
 	public Builder createRole(String account, String name) {
-		// TODO Auto-generated method stub
+		Builder respBuilder = Response.newBuilder();
+		respBuilder.setProtocal(ResponseProtocal.LOGIN_CREATE_ROLE);
+		SC_102.Builder builder = SC_102.newBuilder();
+
 		lock.lock();
-		try{
+		try {
 			Role role = this.roleInit(account, name);
 			RoleCache.addRole(role);
-		}catch(Exception e){
+			builder.setErrorCode(ErrorCode.SUCCESS);
+			respBuilder.setData(builder.build().toByteString());
+			return respBuilder;
+
+		} catch (Exception e) {
 			e.printStackTrace();
-		}finally{
+		} finally {
 			lock.unlock();
 		}
-		
+
 		return null;
 	}
 
@@ -56,16 +65,12 @@ public class LoginServiceImpl implements LoginService {
 		SessionCache.addSession(role.getRoleId(), session);
 		return null;
 	}
-	
-	private Role roleInit(String account,String name){
+
+	private Role roleInit(String account, String name) {
 		Role role = new Role();
 		role.setName(name);
 		role.setAccount(account);
 		return role;
 	}
-	
-	
-
-	
 
 }

@@ -1,11 +1,13 @@
 package com.demo.mmo.mmo_server.game.module.fight.service;
 
+import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
 import org.apache.mina.core.session.IoSession;
 
 import com.demo.mmo.mmo_entity.game.entity.bo.Role;
+import com.demo.mmo.mmo_entity.game.entity.net.Fight;
 import com.demo.mmo.mmo_entity.game.entity.net.Fight.FightInfo;
 import com.demo.mmo.mmo_entity.game.entity.net.Fight.SC_301;
 import com.demo.mmo.mmo_entity.game.entity.net.Fight.SC_302;
@@ -38,7 +40,9 @@ public class FightServiceImpl implements FightService {
 
 		Room room = RoomCache.getRoomMap().get(0);
 		FightInfo.Builder fightInfoBuilder = this.createFightInfoBuilder(roleId);
-		room.getFightInfoMap().put(roleId, fightInfoBuilder);
+		synchronized (room.getFightInfoMap()) {
+			room.getFightInfoMap().put(roleId, fightInfoBuilder);			
+		}
 
 		sc301.setX(fightInfoBuilder.getX());
 		sc301.setY(fightInfoBuilder.getY());
@@ -131,8 +135,13 @@ public class FightServiceImpl implements FightService {
 		Builder respBuilder = room.getNoticer();
 		respBuilder.setProtocal(ResponseProtocal.FIGHT_NOTICE_EVERY_POSITION);
 		Map<Integer, FightInfo.Builder> fightInfoMap = room.getFightInfoMap();
-		for (FightInfo.Builder builder : fightInfoMap.values()) {
-			Set<Integer> set = fightInfoMap.keySet();
+		
+		Set<Integer> set = null;
+		synchronized (fightInfoMap) {
+			set = new HashSet<>(fightInfoMap.keySet());
+		}
+		for (Integer sendRoleId:set) {
+			FightInfo.Builder builder = fightInfoMap.get(sendRoleId);
 			for (Integer roleId : set) {
 				IoSession session = SessionCache.getSessionById(roleId);
 				if (session != null) {
